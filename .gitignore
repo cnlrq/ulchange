@@ -1,0 +1,66 @@
+
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>change</title>
+  <script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+  <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.css" rel="stylesheet">
+  <style type="text/css">
+  textarea{resize:both;height:auto;}
+  #in{margin-top:100px;margin-bottom:50px;}
+  #out{margin-top:50px;}
+ </style>
+ </head>
+ <body>
+ <div class="container">
+  <textarea name="in" id="in" cols="30" rows="10"  class="col-lg-12" placeholder="输入内容"></textarea>
+
+  <br />
+  <hr />
+  <button id="ch1" " class="btn-success btn-lg col-lg-2 col-lg-offset-3">给我换小写</button>
+  <button id="ch2" " class="btn-warning btn-lg col-lg-2 col-lg-offset-3">给我换大写</button>
+  <hr />
+  <br />
+  <textarea name="out" id="out" cols="30" rows="10" class="col-lg-12" style="display:none"></textarea>
+  </div>
+  <script type="text/javascript">
+  /*function change(){
+  a=document.getElementById("in").value;    
+  //alert(a);
+  c=a.toLowerCase();  
+  //alert(b);
+  document.getElementById("out").innerHTML=c;
+  }
+  function change2(){
+  b=document.getElementById("out").value 
+  d=b.toUpperCase();  
+  document.getElementById("in").innerHTML=d;
+  }*/
+  </script>
+
+
+
+  <script type="text/javascript">
+  
+  
+  $("#ch1").click(function (){
+	 a=$("#in").val();
+     l=a.toLowerCase();
+     $("#out").show(200);
+	 $("#out").val(l);
+  });
+  $("#ch2").click(function (){
+	 a=$("#in").val();
+     u=a.toUpperCase(); 
+     $("#out").show(200);
+	 $("#out").val(u);
+  });
+  
+  </script>
+ </body>
+</html>
